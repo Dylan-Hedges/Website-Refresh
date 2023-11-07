@@ -1,0 +1,57 @@
+* {
+  /*Includes border & padding in width & height calculation*/
+  box-sizing: border-box;
+  /*Removes default padding for all elements*/
+  padding: 0;
+  /*Removes default margin for ll elements*/
+  margin: 0;
+  /*Defines CSS Variables - accessible to all elements*/
+  --text-color: #1F2933;
+  --box-shadow-grey: #F8FAFC;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+html{
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 2.5rem; /* 40px */
+}
+
+h2 {
+  font-size: 2rem; /* 32px */
+}
+
+h3 {
+  font-size: 1.75rem; /* 28px */
+}
+
+h4 {
+  font-size: 1.5rem; /* 24px */
+}
+
+h5 {
+  font-size: 1.25rem; /* 20px */
+}
+
+h6, p, a {
+  font-size: 1rem; /* 16px */
+}
+
+/*Styling for top level container component - layout.js*/
+.outer-container{
+  width: 50%; 
+  margin: 85px auto 0 auto;
+}
+
+@media (max-width: 480px) {
+  .outer-container {
+    width: 90%;
+  }
+}

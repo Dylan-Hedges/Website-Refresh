@@ -11,13 +11,13 @@ export default function TypingAnimation(){
             <TypeAnimation
                 sequence={[
                     // Same substring at the start will only be typed out once, initially
-                    'Dylan Hedges: Web Development',
+                    'Web Development',
                     1000,
-                    'Dylan Hedges: UI Development',
+                    'UI Development',
                     1000,
-                    'Dylan Hedges: Front-end Development',
+                    'Front-end Development',
                     1000,
-                    'Dylan Hedges: Email Development',
+                    'Email Development',
                     1000,
                 ]}
                 wrapper="span"

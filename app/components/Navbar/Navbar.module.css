@@ -23,7 +23,8 @@
 }
 
 .img{
-    width: 200px;
+    width: auto;
+    height: 65px;
 }
 
 .li{

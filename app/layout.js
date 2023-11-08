@@ -5,6 +5,8 @@ import {Rubik} from 'next/font/google'
 
 //==Component Imports==
 import Navbar from './components/Navbar/Navbar.jsx'
+import Footer from './components/Footer/Footer.jsx'
+
 
 //Configures the imported Google font, applied to <Body> as a class - In this case only downloads/uses latin characters, here can specify font weight etc, fonts are self-hosted on your domain so it doesnt need to make requests to Google Fonts for the font
 const rubik = Rubik({ subsets: ['latin'] })
@@ -21,9 +23,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={rubik.className}>
-       <Navbar />
+        <Navbar />
         <div className='outer-container'>
           {children}
+        </div>
+        <div className='footer-container'>
+          <div className='outer-container'>
+            <Footer />
+          </div>
         </div>
       </body>
     </html>

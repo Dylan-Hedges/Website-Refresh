@@ -18,18 +18,19 @@
     grid-area: buttons;
 }
 
-.buttonContainer button{
-    width: 100%;
+.btn{
+    width: 150px;
     height: 50px;
     cursor: pointer;
     border-radius: 50px;
     font-weight: 600;
+    font-size: 1.1rem;
     color: var(--btn-text-color);
     background-color: var(--btn-background-color);
     border: 3px solid var(--btn-border-color);
 }
 
-.buttonContainer button:hover{
+.btn:hover{
     color: var(--btn-text-color-hover);
     background-color: var(--btn-background-color-hover);
     border: 3px solid var(--btn-border-color-hover);

@@ -7,7 +7,7 @@ export default function Home() {
     return (
         <main>
             <h1 className={styles.h1}>Dylan Hedges</h1>
-            <TypingAnimation />
+            <TypingAnimation page='Home' />
             <h2 className={styles.h2}>Want to play a game instead?</h2>
             <Link href="https://portfoliogame.dylanhedges.com/" target="_blank"><img src={"/images/portfolio-game.png"} className={styles.img} /></Link>
         </main>

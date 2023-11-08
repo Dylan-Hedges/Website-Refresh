@@ -2,6 +2,8 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import { projectsData } from './projectsData.js';
+import styles from './ProjectSelection.module.css';
+
 
 //Project Selection Component
 export default function ProjectSelection(){
@@ -26,19 +28,21 @@ export default function ProjectSelection(){
 
     return(
         <div>
-            <h2>Projects</h2>
-            <button onClick={() => handleClick('All')}>All</button>       
-            <button onClick={() => handleClick('Web')}>Web</button>
-            <button onClick={() => handleClick('UI')}>UI</button>    
-            <button onClick={() => handleClick('Email')}>Email</button>      
-            {currentProjects.map(project => (
-                <div key={project.id} style={{border: '1px solid grey', width: '500px', margin: '20px'}}>
-                    <h2>{project.title}</h2>
-                    <img src={project.image} style={{width:'200px'}}/>
-
-                    <p>{project.description}</p>
-                </div>
-            ))}
+            <div className={styles.btnContainer}>
+                <button className={styles.btn} onClick={() => handleClick('All')}>All</button>       
+                <button className={styles.btn} onClick={() => handleClick('Web')}>Web</button>
+                <button className={styles.btn} onClick={() => handleClick('UI')}>UI</button>    
+                <button className={styles.btn} onClick={() => handleClick('Email')}>Email</button>      
+            </div>
+            <div className={styles.cardsContainer}>
+                {currentProjects.map(project => (
+                    <div key={project.id} className={styles.card}>
+                        <h3>{project.title}</h3>
+                        <img src={project.image} className={styles.cardImg}/>
+                        <p>{project.description}</p>
+                    </div>
+                ))}
+            </div>
         </div>
     )
 }

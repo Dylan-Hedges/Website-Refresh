@@ -10,7 +10,7 @@ export default function Footer(){
                 <p>Web & UI Developer specialising in creating interactive and engaging websites and web applications using HTML, CSS, JavaScript & React. I am always open to new opportunities. Reach out to me anytime directly via email or LinkedIn. </p>
             </div>
             <div className={styles.buttonContainer}>
-            <Link href="/Contact"><button>Get in touch!</button></Link>
+            <Link href="/Contact"><button className={styles.btn}>Get in touch!</button></Link>
             </div>
             <div className={styles.iconContainer}>
                 <ul>

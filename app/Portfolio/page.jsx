@@ -1,10 +1,15 @@
 import ProjectSelection from "../components/ProjectSelection/ProjectSelection";
+import TypingAnimation from ".././components/TypingAnimation/TypingAnimation.jsx";
+import styles from './page.module.css';
+
 
 //Portfolio Page
 export default function Portfolio() {
     return (
         <main>
-            <h1>Portfolio</h1>
+            <div className={styles.introContainer}>
+                <TypingAnimation page='Portfolio' />
+            </div>
             <ProjectSelection />
         </main>
     )

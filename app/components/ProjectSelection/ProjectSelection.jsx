@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { projectsData } from './projectsData.js';
 import styles from './ProjectSelection.module.css';
+import Link from 'next/Link';
 
 
 //Project Selection Component
@@ -36,11 +37,13 @@ export default function ProjectSelection(){
             </div>
             <div className={styles.cardsContainer}>
                 {currentProjects.map(project => (
-                    <div key={project.id} className={styles.card}>
-                        <h3>{project.title}</h3>
-                        <img src={project.image} className={styles.cardImg}/>
-                        <p>{project.description}</p>
-                    </div>
+                    <Link href={project.projectPageURL} className={styles.cardLink}>
+                        <div key={project.id} className={styles.card}>
+                            <h3 className={styles.cardHeader}>{project.title}</h3>
+                            <img src={project.image} className={styles.cardImg}/>
+                            <p className={styles.cardHeader}>{project.description}</p>
+                        </div>
+                    </Link>
                 ))}
             </div>
         </div>

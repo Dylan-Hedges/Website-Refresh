@@ -1,0 +1,48 @@
+.cardContainer{
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-areas: 
+    ". h1 ."
+    ". thumbImg ."
+    ". icons ."
+    ". bulletList ."
+    ;
+}
+
+.h1{
+    grid-area: h1;
+    text-align: center;
+    padding: 30px 0 30px 0;
+}
+
+.thumbImg{
+    grid-area: thumbImg;
+}
+
+.thumbImg img{
+    width: 100%;
+}
+
+.icons{
+    grid-area: icons;
+}
+
+.icons img{
+    height: 50px;
+    margin: 10px 5px 10px 0;
+}
+
+.bulletList{
+    grid-area: bulletList;
+    background-color: var(--background-border-color);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.bulletList ul{
+    list-style-type: none;
+}
+
+.bulletList ul li{
+    padding: 10px 0 0 0;
+}

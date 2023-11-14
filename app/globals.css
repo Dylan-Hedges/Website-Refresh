@@ -7,7 +7,8 @@
   margin: 0;
   /*Defines CSS Variables - accessible to all elements*/
   --text-color: #1F2933;
-  --box-shadow-grey: #F8FAFC;
+  --text-color-dark: #000000;
+  --background-border-color: #F8FAFC;
   --footer-text-color: #FFFFFF;
   --btn-text-color: #000000;
   --btn-background-color: #FFFFFF;
@@ -51,18 +52,26 @@ h6, p, a {
   font-size: 1rem; /* 16px */
 }
 
-/*Styling for top level container component - layout.js*/
-.outer-container{
-  width: 50%; 
-  margin: 85px auto 0 auto;
+/*Content container styling*/
+.content-container{
+  margin: 85px 0 45px 0;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-areas: ". content .";
 }
 
+.content-item{
+  grid-area: content;
+}
+
+/*Footer container styling*/
 .footer-container{
   background-color: #1b1b1b;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-areas: ". footer .";
 }
 
-@media (max-width: 480px) {
-  .outer-container {
-    width: 90%;
-  }
+.footer-item{
+  grid-area: footer;
 }

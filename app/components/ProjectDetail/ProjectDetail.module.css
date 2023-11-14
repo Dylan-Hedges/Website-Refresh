@@ -34,7 +34,7 @@
 
 .bulletList{
     grid-area: bulletList;
-    background-color: var(--background-border-color);
+    background-color: var(--background-light-grey);
     border-radius: 5px;
     padding: 10px;
 }

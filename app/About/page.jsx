@@ -14,9 +14,9 @@ export default function About() {
                 <div className={styles.textSection}>
                     <h4>Hi, i'm Dylan.</h4>
                     <p>I’m a Web & UI Developer specialising in creating interactive and engaging websites and web applications using HTML, CSS, JavaScript & React.</p>
-                    <p>My background is in IT, Network Engineering and Front-End web development.</p>
-                    <p>To learn more about my skills and experience please visit the portfolio and about pages of this site.</p>
-                    <p>I’m always open to exploring new possibilities, reach out to me anytime directly via email or LinkedIn.</p>
+                    <p>My background is in IT, Network Engineering, UI development, Front-End web development.</p>
+                    <p>To learn more about my skills and experience also visit the Portfolio page of this site.</p>
+                    <p>I’m always open to new opportunities, so feel free to reach out to me anytime directly via email or LinkedIn.</p>
                 </div>
                 <div className={styles.imageSection}>
                     <img src="/images/profile-photo.jpg" className={styles.image}/>

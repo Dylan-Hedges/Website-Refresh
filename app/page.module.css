@@ -7,11 +7,11 @@
     padding-bottom: 10px;
 }
 
-.aboutContainer, .skillsContainer, .projectsContainer, .gameContainer{
+.aboutContainer, .skillsContainer, .projectsContainer, .gameContainer, .channelsContainer{
     padding: 30px 0 30px 0;
 }
 
-.skillsContainer h1, .projectsContainer h1, .gameContainer h1{
+.skillsContainer h1, .projectsContainer h1, .gameContainer h1, .channelsContainer h1{
     text-align: center;
     padding: 30px 0 30px 0;
 }
@@ -61,4 +61,48 @@
 
 .gameContainer img{
     width: 100%;
+}
+
+.channelsContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "channelsHeader channelsHeader channelsHeader"
+    "video1 video2 video3"
+    "video4 video5 video6"
+    ;
+    gap: 2px;
+}
+
+.video1, .video2, .video3, .video4, .video5, .video6{
+    width: 100%;
+    height: 200px;
+}
+
+.channelsHeader{
+    grid-area: channelsHeader;
+}
+
+.video1{
+    grid-area: video1;
+}
+
+.video2{
+    grid-area: video2;
+}
+
+.video3{
+    grid-area: video3;
+}
+
+.video4{
+    grid-area: video4;
+}
+
+.video5{
+    grid-area: video5;
+}
+
+.video6{
+    grid-area: video6;
 }

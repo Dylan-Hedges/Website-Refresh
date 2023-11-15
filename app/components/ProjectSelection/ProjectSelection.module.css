@@ -45,6 +45,11 @@
     padding: 10px;
 }
 
+/*Limits width of all child elements of each card to prevent overflow with grid*/
+.card > * {
+    max-width: 100%; 
+}
+
 .cardHeader{
     color: var(--text-color-dark);
 }

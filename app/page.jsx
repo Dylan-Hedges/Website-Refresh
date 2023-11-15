@@ -39,6 +39,15 @@ export default function Home() {
                 <h1>Projects</h1>
                 <ProjectSelection />
             </div>
+            <div className={styles.channelsContainer}>
+                <h1 className={styles.channelsHeader}>Favourite Channels</h1>
+                <iframe className={styles.video1} src="https://www.youtube.com/embed/VGu1vDAWNTg?si=qdByFbORh_xhRdck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe className={styles.video2} src="https://www.youtube.com/embed/BI1o2H9z9fo?si=EhtO0s8_x8zoe8hc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe className={styles.video3} src="https://www.youtube.com/embed/y8CYSwHXVNE?si=RTaVophJY22Txruh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe className={styles.video4} src="https://www.youtube.com/embed/RmveJc8_voo?si=YlDFAp4JvuaoDy31" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe className={styles.video5} src="https://www.youtube.com/embed/e1dA5MLuS44?si=uv_zeKquluwb_JUv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe className={styles.video6} src="https://www.youtube.com/embed/jx8olulc3zE?si=KK-F1ZFovhci7JFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
         </main>
     )
 }

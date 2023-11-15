@@ -1,4 +1,6 @@
+import Link from 'next/Link';
 import TypingAnimation from ".././components/TypingAnimation/TypingAnimation.jsx";
+import SkillsBanner from ".././components/SkillsBanner/SkillsBanner.jsx";
 import styles from './page.module.css';
 
 //About Page
@@ -19,22 +21,17 @@ export default function About() {
                     <p>I’m always open to new opportunities, so feel free to reach out to me anytime directly via email or LinkedIn.</p>
                 </div>
                 <div className={styles.imageSection}>
-                    <img src="/images/profile-photo.jpg" className={styles.image}/>
+                    <img src="/images/profile-photo.jpg" />
                 </div>
             </div>
-            {/*Interactive Timeline Section - Larger Screens*/}
-            <div className={styles.timelineContainer}>
-                <h3>Drag the slider to learn more</h3>
-                <iframe
-                    src="https://timeline.dylanhedges.com/"
-                    title="Example iframe"
-                    width="100%"
-                    height="500px"
-                    allowFullScreen
-                ></iframe>
+            {/*Skills Section*/}
+            <div className={styles.skillsContainer}>
+                <h1>Skills</h1>
+                <SkillsBanner />
             </div>
-            {/*Static Timeline Section - Smaller Screens*/}
+            {/*Static Timeline Section*/}
             <div className={styles.staticTimelineContainer}>
+                <h1>Experience</h1>
                 <div className={styles.row1}>
                     <div className={styles.rowImage}>
                         <img src="/images/circle-dot.svg" />
@@ -85,6 +82,11 @@ export default function About() {
                         <p>Developed interactive web-based courses, maintained and updated the company website, created customised HTML emails for mass communication</p>
                     </div>
                 </div>
+            </div>
+            {/*Interactive Timeline Section*/}
+            <div className={styles.interactiveTimelineContainer}>
+                <h1>Interactive Timeline</h1>
+                <Link href="https://timeline.dylanhedges.com/" target="_blank"><img src={"/images/interactive-timeline.png"} /></Link>
             </div>
         </main>
     )

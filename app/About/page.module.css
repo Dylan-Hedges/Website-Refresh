@@ -25,11 +25,20 @@
     grid-area: imageContent;
 }
 
-.image{
+.imageSection img{
     border-radius: 5%;
     width: 100%;
     border: 1px solid var(--background-border-color);
     box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+.skillsContainer{
+    padding: 30px 0 30px 0;
+}
+
+.skillsContainer h1{
+    text-align: center;
+    padding: 30px 0 30px 0;
 }
 
 .staticTimelineContainer{
@@ -42,6 +51,11 @@
         "row4"
         "row5"
     ;
+}
+
+.staticTimelineContainer h1{
+    text-align: center;
+    padding: 30px 0 30px 0;
 }
 
 .row1, .row2, .row3, .row4, .row5{
@@ -82,24 +96,17 @@
     padding: 10px 0 20px 0;
 }
 
-@media screen and (min-width: 1250px) {
-    /*Shows interactive timeline for large screens*/
-    .timelineContainer{
-        display: visible;
-    }
-    /*Hides static timeline for large screens*/
-    .staticTimelineContainer{
-        display: none;
-    }
+.interactiveTimelineContainer{
+    padding: 30px 0 30px 0;
 }
 
-@media screen and (max-width: 1249px) {
-    /*Hides interactive timeline for smaller screens*/
-    .timelineContainer{
-        display: none;
-    }
-    /*Shows static timeline for smaller screens*/
-    .staticTimelineContainer{
-        display: visible;
-    }
+.interactiveTimelineContainer h1{
+    text-align: center;
+    padding: 30px 0 30px 0;
+}
+
+.interactiveTimelineContainer img{
+    width: 100%;
+    border: 1px solid var(--background-border-color);
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.2);
 }

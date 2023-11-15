@@ -8,10 +8,12 @@ import Link from 'next/Link';
 export default function Home() {
     return (
         <main>
+            {/*Intro Section*/}
             <div className={styles.introContainer}>
                 <h1>Dylan Hedges</h1>
                 <TypingAnimation page='Home' />
             </div>
+            {/*About section*/}
             <div className={styles.aboutContainer}>
                 <div className={styles.textSection}>
                     <p>Web & UI Developer specialising in creating interactive and engaging websites and web applications using HTML, CSS, JavaScript & React.</p>
@@ -19,17 +21,20 @@ export default function Home() {
                     <Link href="/Contact"><button>Get in touch!</button></Link>
                 </div>
                 <div className={styles.imageSection}>
-                    <img src="/images/home-intro.jpg" className={styles.image}/>
+                    <img src="/images/home-intro.jpg" />
                 </div>
             </div>
+            {/*Skills Section*/}
             <div className={styles.skillsContainer}>
                 <h1>Skills</h1>
                 <SkillsBanner />
             </div>
+            {/*Game Section*/}
             <div className={styles.gameContainer}>
                 <h1>Want to play a game instead?</h1>
-                <Link href="https://portfoliogame.dylanhedges.com/" target="_blank"><img src={"/images/portfolio-game-thumb.png"} className={styles.img} /></Link>
+                <Link href="https://portfoliogame.dylanhedges.com/" target="_blank"><img src={"/images/portfolio-game-thumb.png"} /></Link>
             </div>
+            {/*Projects Section*/}
             <div className={styles.projectsContainer}>
                 <h1>Projects</h1>
                 <ProjectSelection />

@@ -1,7 +1,6 @@
 import styles from './Footer.module.css';
 import Link from 'next/Link';
 
-
 export default function Footer(){
     return(
         <div className={styles.container}>
@@ -15,8 +14,8 @@ export default function Footer(){
             <div className={styles.iconContainer}>
                 <ul>
                     <li><Link href="mailto:dh@dylanhedges.com"><img src={"/images/envelope-reverse.png"} /></Link></li>
-                    <li><Link href="https://www.linkedin.com/in/dylan-hedges/"><img src={"/images/linkedin-reverse.png"} /></Link></li>
-                    <li><Link href="https://github.com/Dylan-Hedges"><img src={"/images/github-reverse.png"} /></Link></li>
+                    <li><Link href="https://www.linkedin.com/in/dylan-hedges/" target="_blank"><img src={"/images/linkedin-reverse.png"} /></Link></li>
+                    <li><Link href="https://github.com/Dylan-Hedges" target="_blank"><img src={"/images/github-reverse.png"} /></Link></li>
                 </ul>
             </div>
         </div>

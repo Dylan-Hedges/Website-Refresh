@@ -1,6 +1,5 @@
 //Next.js configuration - renders component on the client side/browser, apply to components with interactivity
 "use client";
-import React from 'react';
 import styles from './SkillsBanner.module.css';
 
 //Typing Animation Component

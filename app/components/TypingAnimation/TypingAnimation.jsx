@@ -1,6 +1,5 @@
 //Next.js configuration - renders component on the client side/browser, apply to components with interactivity
 "use client";
-import React from 'react';
 import { TypeAnimation } from "react-type-animation";
 import styles from './TypingAnimation.module.css';
 

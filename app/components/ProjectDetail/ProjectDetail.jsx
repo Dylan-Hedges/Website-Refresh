@@ -2,7 +2,6 @@ import Link from 'next/Link';
 import styles from './ProjectDetail.module.css';
 
 export default function ProjectCard(props){
-    console.log(props.projectInfo.name)
     const name = props.projectInfo.name;
     const image = props.projectInfo.image;
     const projectURL = props.projectInfo.projectURL;

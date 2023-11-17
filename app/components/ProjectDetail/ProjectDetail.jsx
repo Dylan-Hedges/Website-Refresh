@@ -2,7 +2,7 @@ import Link from 'next/Link';
 import styles from './ProjectDetail.module.css';
 
 export default function ProjectCard(props){
-    const name = props.projectInfo.name;
+    const name = props.projectInfo.title;
     const image = props.projectInfo.image;
     const projectURL = props.projectInfo.projectURL;
     const bullets = props.projectInfo.bullets;
@@ -27,7 +27,7 @@ export default function ProjectCard(props){
             <div className={styles.bulletList}>
                 <ul className={styles.ul}>
                     {bullets.map((bullet)=>{
-                        return <li className={styles.li}>{bullet}</li>
+                        return <li className={styles.li} key={bullet}>{bullet}</li>
                     })
                     }
                 </ul>

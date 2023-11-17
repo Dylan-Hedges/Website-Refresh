@@ -1,19 +1,13 @@
 import ProjectCard from "../../components/ProjectDetail/ProjectDetail";
+import { projectsData } from '../../components/ProjectSelection/projectsData.js';
 
 export default function YouTubePlayer() {
-    const projectInfo ={
-        name: 'YouTube Player',
-        image: '/images/youtube-player-thumb.png',
-        projectURL: 'https://youtubeplayer.dylanhedges.com/',
-        bullets: [
-            'YouTube video player web application',
-            'Developed using React, Node, HTML, CSS, Bootstrap',
-            'Search for and play any YouTube videos',
-            'Fully responsive and contains YouTube player functionality',
-            'Integrates with the YouTube API'
-        ],
-        gitHubURL: 'https://github.com/Dylan-Hedges/ReactYoutubePlayer'
-    }
+    //Defines which project to show
+    const projectToShow = "YouTube Player";
+    //Returns only the data for a specific project (specified above)
+    const projectInfo = projectsData.find((project) =>{
+        return project.title === projectToShow;
+    });
 
     return (
         <main>

@@ -1,19 +1,13 @@
 import ProjectCard from "../../components/ProjectDetail/ProjectDetail";
+import { projectsData } from '../../components/ProjectSelection/projectsData.js';
 
 export default function WCAGDemo() {
-    const projectInfo ={
-        name: 'WCAG Demo',
-        image: '/images/wcag-demo-thumb.png',
-        projectURL: 'https://wcagdemo.dylanhedges.com/',
-        bullets: [
-            'Web Content Accessibility Guidelines demo',
-            'Implements Success Criterion from WCAG 2.2',
-            'Developed using Storyline',
-            'Keyboard accessible and does not require a mouse',
-            'Covers guidelines such as use of colour, captions, focus order etc.'
-        ],
-        gitHubURL: 'https://github.com/Dylan-Hedges/WCAG-Demo'
-    }
+    //Defines which project to show
+    const projectToShow = "WCAG Demo";
+    //Returns only the data for a specific project (specified above)
+    const projectInfo = projectsData.find((project) =>{
+        return project.title === projectToShow;
+    });
 
     return (
         <main>

@@ -1,19 +1,13 @@
 import ProjectCard from "../../components/ProjectDetail/ProjectDetail";
+import { projectsData } from '../../components/ProjectSelection/projectsData.js';
 
 export default function JoesBBQ() {
-    const projectInfo ={
-        name: 'Joes BBQ',
-        image: '/images/joes-bbq-thumb.png',
-        projectURL: 'https://joesbbq.dylanhedges.com/',
-        bullets: [
-            'Restaurant website for a BBQ smokehouse',
-            'Developed using React, Node, HTML, SCSS, Bootstrap',
-            'Displays restaurant menu, reviews and special offers',
-            'Contact info and opening times for the restaurant',
-            'Fully responsive and works on a variety of devices'
-        ],
-        gitHubURL: 'https://github.com/Dylan-Hedges/React-Restaurant-App'
-    }
+    //Defines which project to show
+    const projectToShow = "Joes BBQ";
+    //Returns only the data for a specific project (specified above)
+    const projectInfo = projectsData.find((project) =>{
+        return project.title === projectToShow;
+    });
 
     return (
         <main>

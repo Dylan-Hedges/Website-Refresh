@@ -1,19 +1,13 @@
 import ProjectCard from "../../components/ProjectDetail/ProjectDetail";
+import { projectsData } from '../../components/ProjectSelection/projectsData.js';
 
 export default function SurveySend() {
-    const projectInfo ={
-        name: 'Survey-Send',
-        image: '/images/survey-send-thumb.png',
-        projectURL: 'https://quiet-coast-41651.herokuapp.com',
-        bullets: [
-            'Email Survey web application',
-            'Developed using React, Redux, MongoDB, Node, Express, Stripe, SendGrid',
-            'Create and send email surveys to participants and see responses',
-            'Captures, stores and displays recipient response data',
-            'To purchase credits use card number: 4242 4242 4242 4242',
-        ],
-        gitHubURL: 'https://github.com/Dylan-Hedges/NodeWithReactFullStack2019'
-    }
+    //Defines which project to show
+    const projectToShow = "Survey-Send";
+    //Returns only the data for a specific project (specified above)
+    const projectInfo = projectsData.find((project) =>{
+        return project.title === projectToShow;
+    });
 
     return (
         <main>

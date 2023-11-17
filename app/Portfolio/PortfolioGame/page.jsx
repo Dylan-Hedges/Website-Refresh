@@ -1,19 +1,13 @@
 import ProjectCard from "../../components/ProjectDetail/ProjectDetail";
+import { projectsData } from '../../components/ProjectSelection/projectsData.js';
 
 export default function PortfolioGame() {
-    const projectInfo ={
-        name: 'Portfolio Game',
-        image: '/images/portfolio-game-thumb.png',
-        projectURL: 'https://portfoliogame.dylanhedges.com/',
-        bullets: [
-            'Interactive Portfolio game developed using Storyline',
-            'Alternative to a standard portfolio website',
-            'Control the character using a keyboard',
-            'Hit the boxes to get more information about my skills & experience',
-            'Contains background music and sound effects'
-        ],
-        gitHubURL: 'https://github.com/Dylan-Hedges/Portfolio-Game'
-    }
+    //Defines which project to show
+    const projectToShow = "Portfolio Game";
+    //Returns only the data for a specific project (specified above)
+    const projectInfo = projectsData.find((project) =>{
+        return project.title === projectToShow;
+    });
 
     return (
         <main>

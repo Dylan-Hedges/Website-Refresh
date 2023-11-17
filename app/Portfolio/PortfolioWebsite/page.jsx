@@ -1,19 +1,13 @@
 import ProjectCard from "../../components/ProjectDetail/ProjectDetail";
+import { projectsData } from '../../components/ProjectSelection/projectsData.js';
 
 export default function PortfolioWebsite() {
-    const projectInfo ={
-        name: 'Portfolio Website',
-        image: '/images/portfolio-thumb.png',
-        projectURL: 'https://dylanhedges.com/',
-        bullets: [
-            'Personal Portfolio website',
-            'Developed using React, Next.js, HTML & CSS modules',
-            'Learn more about my background, skills and experience',
-            'View projects under the Portfolio section',
-            'Responsive for a variety of devices and is fully customisable '
-        ],
-        gitHubURL: 'https://github.com/Dylan-Hedges/Website-Refresh'
-    }
+    //Defines which project to show
+    const projectToShow = "Portfolio Website";
+    //Returns only the data for a specific project (specified above)
+    const projectInfo = projectsData.find((project) =>{
+        return project.title === projectToShow;
+    });
 
     return (
         <main>

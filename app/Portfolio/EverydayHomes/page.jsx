@@ -1,19 +1,13 @@
 import ProjectCard from "../../components/ProjectDetail/ProjectDetail";
+import { projectsData } from '../../components/ProjectSelection/projectsData.js';
 
 export default function EverydayHomes() {
-    const projectInfo ={
-        name: 'Everyday Homes',
-        image: '/images/everyday-homes-thumb.png',
-        projectURL: 'https://everydayhomes.dylanhedges.com/',
-        bullets: [
-            'Real Estate website',
-            'Developed using React, Node, HTML, CSS, Bootstrap',
-            'Search for and find properties',
-            'Filter by home type, bedrooms, price and amenities',
-            'Find more info about the company and its agents'
-        ],
-        gitHubURL: 'https://github.com/Dylan-Hedges/react-real-estate-app-cra'
-    }
+    //Defines which project to show
+    const projectToShow = "Everyday Homes";
+    //Returns only the data for a specific project (specified above)
+    const projectInfo = projectsData.find((project) =>{
+        return project.title === projectToShow;
+    });
 
     return (
         <main>

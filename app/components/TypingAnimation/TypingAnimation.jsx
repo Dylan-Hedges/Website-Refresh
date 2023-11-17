@@ -25,7 +25,7 @@ export default function TypingAnimation(props){
     }
 
     return(
-        <div>
+        <div className={styles.typingAnimationContainer}>
             <TypeAnimation
                 sequence={sequenceConfig}
                 wrapper="span"

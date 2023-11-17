@@ -1,4 +1,4 @@
-//Data displayed on Potfolio page
+//Data for pojects - displayed on Potfolio page
 export const projectsData = [
     {
       id: 1,
@@ -12,7 +12,7 @@ export const projectsData = [
       id: 2,
       title: "Dev-Quiz",
       description: "Quiz web application that uses ChatGPT.",
-      image: "/images/dev-quiz-thumb-small.png",
+      image: "/images/dev-quiz-thumb.png",
       tag: ["All", "Web"],
       projectPageURL: "/Portfolio/DevQuiz",
     },
@@ -28,7 +28,7 @@ export const projectsData = [
       id: 4,
       title: "Survey-Send",
       description: "Email survey web application.",
-      image: "/images/survey-send-thumb-small.png",
+      image: "/images/survey-send-thumb.png",
       tag: ["All", "Web"],
       projectPageURL: "/Portfolio/SurveySend",
     },

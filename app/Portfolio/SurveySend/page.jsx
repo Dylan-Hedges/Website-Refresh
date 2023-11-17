@@ -3,7 +3,7 @@ import ProjectCard from "../../components/ProjectDetail/ProjectDetail";
 export default function SurveySend() {
     const projectInfo ={
         name: 'Survey-Send',
-        image: '/images/survey-send-thumb.jpg',
+        image: '/images/survey-send-thumb.png',
         projectURL: 'https://quiet-coast-41651.herokuapp.com',
         bullets: [
             'Email Survey web application',

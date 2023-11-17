@@ -29,19 +29,21 @@ export default function ProjectSelection(){
 
     return(
         <div>
+            {/*Buttons Section*/}
             <div className={styles.btnContainer}>
                 <button className={styles.btn} onClick={() => handleClick('All')}>All</button>       
                 <button className={styles.btn} onClick={() => handleClick('Web')}>Web</button>
                 <button className={styles.btn} onClick={() => handleClick('UI')}>UI</button>    
                 <button className={styles.btn} onClick={() => handleClick('Email')}>Email</button>      
             </div>
+            {/*Card Section*/}
             <div className={styles.cardsContainer}>
                 {currentProjects.map(project => (
                     <Link href={project.projectPageURL} className={styles.cardLink}>
                         <div key={project.id} className={styles.card}>
                             <h3 className={styles.cardHeader}>{project.title}</h3>
                             <img src={project.image} className={styles.cardImg}/>
-                            <p className={styles.cardHeader}>{project.description}</p>
+                            <p className={styles.cardText}>{project.description}</p>
                         </div>
                     </Link>
                 ))}

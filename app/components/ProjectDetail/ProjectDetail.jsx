@@ -9,17 +9,21 @@ export default function ProjectCard(props){
     const gitHubURL = props.projectInfo.gitHubURL;
 
     return(
-        <div className={styles.cardContainer}>
-            <div className={styles.h1}>
+        <div className={styles.projectContainer}>
+            {/*Header*/}
+            <div className={styles.header}>
                 <h1>{name}</h1>
             </div>
+            {/*Image*/}
             <div className={styles.thumbImg}>
                 <Link href={projectURL} target="_blank"><img src={image} /></Link>
             </div>
+            {/*Icons*/}
             <div className={styles.icons}>
                 <Link href={projectURL} target="_blank"><img src="/images/eye.png" /></Link>
                 <Link href={gitHubURL} target="_blank"><img src="/images/github.png" /></Link>
             </div>
+            {/*Bullets*/}
             <div className={styles.bulletList}>
                 <ul className={styles.ul}>
                     {bullets.map((bullet)=>{

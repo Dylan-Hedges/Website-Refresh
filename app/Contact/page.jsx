@@ -6,10 +6,13 @@ import Link from 'next/Link';
 export default function Contact() {
     return (
         <main>
-            <div className={styles.introContainer}>
+            {/*Intro Section*/}
+            <section className={styles.introContainer}>
                 <TypingAnimation page='Contact' />
-            </div>
-            <div className={styles.contentContainer}>
+            </section>
+            {/*Content Section*/}
+            <section className={styles.contentContainer}>
+                {/*Text section*/}
                 <div className={styles.textSection}>
                     <h1>Let's Chat!</h1>
                     <h2>Get in touch.</h2>
@@ -20,10 +23,11 @@ export default function Contact() {
                     <h4>GitHub:</h4>
                     <Link href="https://github.com/Dylan-Hedges" className={styles.linkStyle} target="_blank"><p>github.com/Dylan-Hedges</p></Link>
                 </div>
+                {/*Image Section*/}
                 <div className={styles.imageSection}>
                     <img  className={styles.image}src="/images/contact.jpg" alt=""/>
                 </div>
-            </div>
+            </section>
         </main>
     )
 }

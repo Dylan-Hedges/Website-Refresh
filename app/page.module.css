@@ -1,35 +1,35 @@
-.introContainer{
-    padding: 120px 0 50px 0;
-}
-
-.introContainer h1{
-    font-size: 4rem;
-    padding-bottom: 10px;
-}
-
-.aboutContainer, .skillsContainer, .projectsContainer, .gameContainer, .channelsContainer{
+/*---All Containers---*/
+.aboutSection, .skillsSection, .projectsSection, .gameSection, .channelsSection{
     padding: 30px 0 30px 0;
 }
 
-.skillsContainer h1, .projectsContainer h1, .gameContainer h1, .channelsContainer h1{
+.skillsSection h1, .projectsSection h1, .gameSection h1, .channelsSection h1{
     text-align: center;
     padding: 30px 0 30px 0;
 }
 
+/*---Intro Section---*/
+.introSection{
+    padding: 120px 0 40px 0;
+}
+
+.introSection h1{
+    font-size: 4rem;
+    padding-bottom: 10px;
+}
+
+/*---About Section---*/
 .aboutContainer{
     display: grid;
-    grid-template-columns: 55% 5% 40%;
-    grid-template-areas: "textContent . imageContent";
+    gap: 10px;
 }
 
 .textSection{
     grid-area: textContent;
     align-self: center;
-}
-
-.textSection p{
-    font-size: 1.3rem;
-    padding: 15px 0 15px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .textSection button{
@@ -59,50 +59,98 @@
     width: 100%;
 }
 
-.gameContainer img{
+/*---Game Section---*/
+.gameSection img{
     width: 100%;
 }
 
+/*---Channel Section---*/
 .channelsContainer{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "channelsHeader channelsHeader channelsHeader"
-    "video1 video2 video3"
-    "video4 video5 video6"
-    ;
+    /*Use Flexbox*/
+    display: flex;
+    /*Wrap elements on new line if exceeds max container width*/
+    flex-wrap: wrap;
     gap: 2px;
 }
 
-.video1, .video2, .video3, .video4, .video5, .video6{
-    width: 100%;
+.video{
+    /*Equally grow each child element (width)*/
+    flex: 1;
     height: 200px;
 }
 
-.channelsHeader{
-    grid-area: channelsHeader;
+/*Responsive - Media Queries*/
+@media screen and (min-width: 0) and (max-width: 480px){
+    .introSection, .textSection{
+        text-align: center;
+    }
+    .aboutContainer{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "imageContent"
+        "textContent"
+        ;
+    }
+    .textSection p{
+        font-size: 1.1rem;
+    }
 }
 
-.video1{
-    grid-area: video1;
+@media screen and (min-width: 481px) and (max-width: 768px){
+    .introSection, .textSection{
+        text-align: center;
+    }
+    .aboutContainer{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "imageContent"
+        "textContent"
+        ;
+    }
+    .imageSection img{
+        padding: 0 40px 0 40px;
+    }
+    .textSection p{
+        font-size: 1.1rem;
+    }
 }
-
-.video2{
-    grid-area: video2;
+  
+@media screen and (min-width: 769px) and (max-width: 1200px){
+    .introSection, .textSection{
+        text-align: left
+    }
+    .aboutContainer{
+        grid-template-columns: 55fr 45fr;
+        grid-template-areas: "textContent imageContent";
+    }    
+    .textSection p{
+        font-size: 1.2rem;
+    }
 }
-
-.video3{
-    grid-area: video3;
+  
+@media screen and (min-width: 1201px) and (max-width: 1800px){
+    .introSection, .textSection{
+        text-align: left
+    }
+    .aboutContainer{
+        grid-template-columns: 55fr 45fr;
+        grid-template-areas: "textContent imageContent";
+    }    
+    .textSection p{
+        font-size: 1.3rem;
+    }
 }
-
-.video4{
-    grid-area: video4;
+  
+@media screen and (min-width: 1801px){
+    .introSection, .textSection{
+        text-align: left
+    }
+    .aboutContainer{
+        grid-template-columns: 55fr 45fr;
+        grid-template-areas: "textContent imageContent";
+    }    
+    .textSection p{
+        font-size: 1.3rem;
+    }
 }
-
-.video5{
-    grid-area: video5;
-}
-
-.video6{
-    grid-area: video6;
-}
+  

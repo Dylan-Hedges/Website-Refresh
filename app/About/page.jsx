@@ -7,12 +7,12 @@ import styles from './page.module.css';
 export default function About() {
     return (
         <main>
-            {/*Page Header Section*/}
-            <div className={styles.introContainer}>
-                <TypingAnimation page='About' />
-            </div>
             {/*Intro Section*/}
-            <div className={styles.contentContainer}>
+            <section className={styles.introContainer}>
+                <TypingAnimation page='About' />
+            </section>
+            {/*About Section*/}
+            <section className={styles.aboutContainer}>
                 <div className={styles.textSection}>
                     <h4>Hi, i'm Dylan.</h4>
                     <p>I’m a Web & UI Developer specialising in creating interactive and engaging websites and web applications using HTML, CSS, JavaScript & React.</p>
@@ -23,14 +23,14 @@ export default function About() {
                 <div className={styles.imageSection}>
                     <img src="/images/profile-photo.jpg" />
                 </div>
-            </div>
+            </section>
             {/*Skills Section*/}
-            <div className={styles.skillsContainer}>
+            <section className={styles.skillsContainer}>
                 <h1>Skills</h1>
                 <SkillsBanner />
-            </div>
+            </section>
             {/*Static Timeline Section*/}
-            <div className={styles.staticTimelineContainer}>
+            <section className={styles.staticTimelineContainer}>
                 <h1>Experience</h1>
                 <div className={styles.row1}>
                     <div className={styles.rowImage}>
@@ -82,12 +82,12 @@ export default function About() {
                         <p>Developed interactive web-based courses, maintained and updated the company website, created customised HTML emails for mass communication</p>
                     </div>
                 </div>
-            </div>
+            </section>
             {/*Interactive Timeline Section*/}
-            <div className={styles.interactiveTimelineContainer}>
+            <section className={styles.interactiveTimelineContainer}>
                 <h1>Interactive Timeline</h1>
                 <Link href="https://timeline.dylanhedges.com/" target="_blank"><img src={"/images/interactive-timeline.png"} /></Link>
-            </div>
+            </section>
         </main>
     )
 }

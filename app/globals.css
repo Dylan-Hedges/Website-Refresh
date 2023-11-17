@@ -27,6 +27,7 @@ body {
 }
 
 html{
+  /*Root font size*/
   font-size: 16px;
 }
 
@@ -54,11 +55,10 @@ h6, p, a {
   font-size: 1rem; /* 16px */
 }
 
-/*Content container styling*/
+/*Content container - Outer container*/
 .content-container{
   margin: 85px 0 45px 0;
   display: grid;
-  grid-template-columns: 25% 50% 25%;
   grid-template-areas: ". content .";
 }
 
@@ -66,14 +66,46 @@ h6, p, a {
   grid-area: content;
 }
 
-/*Footer container styling*/
+/*Footer container - Outer container*/
 .footer-container{
   background-color: #1b1b1b;
   display: grid;
-  grid-template-columns: 25% 50% 25%;
   grid-template-areas: ". footer .";
 }
 
 .footer-item{
   grid-area: footer;
 }
+
+
+/*Responsive - Media Queries*/
+@media screen and (min-width: 0) and (max-width: 480px){
+  .content-container, .footer-container{
+    grid-template-columns: 2% 96% 2%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+  .content-container, .footer-container{
+    grid-template-columns: 5% 90% 5%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px){
+  .content-container, .footer-container{
+    grid-template-columns: 8% 84% 8%;
+  }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1800px){
+  .content-container, .footer-container{
+    grid-template-columns: 20% 60% 20%;
+  }
+}
+
+@media screen and (min-width: 1801px){
+  .content-container, .footer-container{
+    grid-template-columns: 25% 50% 25%;
+  }
+}
+

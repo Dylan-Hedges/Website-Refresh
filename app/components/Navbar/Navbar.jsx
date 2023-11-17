@@ -24,7 +24,7 @@ export default function Navbar() {
                 //Displays the mobile nav bar - If displayMobileNav === true
                 <nav className={styles.navBarMobile}>
                     <ul className={styles.ulNavMobile}>
-                        <li className={styles.liCloseMobile}><Link href="/"><img src="/images/close-white.png" className={styles.imgCloseMobile} onClick={hamburgerHandleClick}/></Link></li>
+                        <li className={styles.liCloseMobile}><Link href="/"><img src="/images/close-white.png" className={styles.imgCloseMobile} onClick={hamburgerHandleClick} alt="Close button, select to close the nav bar."/></Link></li>
                         <li className={styles.liMenuItemMobile}><Link onClick={hamburgerHandleClick} href="/" className={styles.linkMenuItemMobile}>Home</Link></li>
                         <li className={styles.liMenuItemMobile}><Link onClick={hamburgerHandleClick} href="/About" className={styles.linkMenuItemMobile}>About</Link></li>
                         <li className={styles.liMenuItemMobile}><Link onClick={hamburgerHandleClick} href="/Portfolio" className={styles.linkMenuItemMobile}>Portfolio</Link></li>
@@ -37,12 +37,12 @@ export default function Navbar() {
                 //Displays the desktop nav bar - If displayMobileNav === false
                 <nav className={styles.navBar}>
                     <ul className={styles.ulNav}>
-                        <li className={styles.liLogo}><Link href="/"><img src={"/images/new-logo-long-reverse.png"} className={styles.imgLogo} /></Link></li>
+                        <li className={styles.liLogo}><Link href="/"><img src={"/images/new-logo-long-reverse.png"} className={styles.imgLogo} alt="Logo, select to go back to the Home page."/></Link></li>
                         <li className={styles.liMenuItem}><Link href="/" className={styles.linkMenuItem}>Home</Link></li>
                         <li className={styles.liMenuItem}><Link href="/About" className={styles.linkMenuItem}>About</Link></li>
                         <li className={styles.liMenuItem}><Link href="/Portfolio" className={styles.linkMenuItem}>Portfolio</Link></li>
                         <li className={styles.liMenuItem}><Link href="/Contact" className={styles.linkMenuItem}>Contact</Link></li>
-                        <li className={styles.liHamburger}><Link href="/"><img src="/images/menu.png" className={styles.imgHamburger} onClick={hamburgerHandleClick}/></Link></li>
+                        <li className={styles.liHamburger}><Link href="/"><img src="/images/menu.png" className={styles.imgHamburger} onClick={hamburgerHandleClick} alt="Nav bar button, select to open the nav bar."/></Link></li>
                     </ul>
                 </nav>
                 )

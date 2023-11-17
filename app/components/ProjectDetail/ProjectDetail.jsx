@@ -16,12 +16,12 @@ export default function ProjectCard(props){
             </div>
             {/*Image*/}
             <div className={styles.thumbImg}>
-                <Link href={projectURL} target="_blank"><img src={image} /></Link>
+                <Link href={projectURL} target="_blank"><img src={image} alt="Live project screenshot, select to view the live version of this project."/></Link>
             </div>
             {/*Icons*/}
             <div className={styles.icons}>
-                <Link href={projectURL} target="_blank"><img src="/images/eye.png" /></Link>
-                <Link href={gitHubURL} target="_blank"><img src="/images/github.png" /></Link>
+                <Link href={projectURL} target="_blank"><img src="/images/eye.png" alt="Live project icon, select to view the live version of this project."/></Link>
+                <Link href={gitHubURL} target="_blank"><img src="/images/github.png" alt="Github icon, select to view the GitHub repository for this project."/></Link>
             </div>
             {/*Bullets*/}
             <div className={styles.bulletList}>

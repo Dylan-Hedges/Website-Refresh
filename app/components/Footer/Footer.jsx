@@ -16,9 +16,9 @@ export default function Footer(){
             {/*Column 3 - Icons*/}
             <div className={styles.iconContainer}>
                 <ul>
-                    <li><Link href="mailto:dh@dylanhedges.com"><img src={"/images/envelope-reverse.png"} /></Link></li>
-                    <li><Link href="https://www.linkedin.com/in/dylan-hedges/" target="_blank"><img src={"/images/linkedin-reverse.png"} /></Link></li>
-                    <li><Link href="https://github.com/Dylan-Hedges" target="_blank"><img src={"/images/github-reverse.png"} /></Link></li>
+                    <li><Link href="mailto:dh@dylanhedges.com"><img src={"/images/envelope-reverse.png"} alt="Email icon, select to open email client."/></Link></li>
+                    <li><Link href="https://www.linkedin.com/in/dylan-hedges/" target="_blank"><img src={"/images/linkedin-reverse.png"} alt="LinkedIn icon, select to open Dylan Hedges LinkedIn profile."/></Link></li>
+                    <li><Link href="https://github.com/Dylan-Hedges" target="_blank"><img src={"/images/github-reverse.png"} alt="GitHub icon, select to open Dylan Hedges GitHub profile."/></Link></li>
                 </ul>
             </div>
         </div>

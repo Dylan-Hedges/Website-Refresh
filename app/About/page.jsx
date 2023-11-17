@@ -21,7 +21,7 @@ export default function About() {
                     <p>I’m always open to new opportunities, so feel free to reach out to me anytime directly via email or LinkedIn.</p>
                 </div>
                 <div className={styles.imageSection}>
-                    <img src="/images/profile-photo.jpg" />
+                    <img src="/images/profile-photo.jpg" alt="Dylan Hedges profile photo."/>
                 </div>
             </section>
             {/*Skills Section*/}
@@ -34,7 +34,7 @@ export default function About() {
                 <h1>Experience</h1>
                 <div className={styles.row1}>
                     <div className={styles.rowImage}>
-                        <img src="/images/circle-dot.svg" />
+                        <img src="/images/circle-dot.svg" alt=""/>
                     </div>
                     <div className={styles.rowText}>
                         <h5>IT BSc (First-Class Honours)</h5>
@@ -44,7 +44,7 @@ export default function About() {
                 </div>
                 <div className={styles.row2}>
                     <div className={styles.rowImage}>
-                        <img src="/images/circle-dot.svg" />
+                        <img src="/images/circle-dot.svg" alt=""/>
                     </div>
                     <div className={styles.rowText}>
                         <h5>Network Engineer </h5>
@@ -54,7 +54,7 @@ export default function About() {
                 </div>
                 <div className={styles.row3}>
                     <div className={styles.rowImage}>
-                        <img src="/images/circle-dot.svg" />
+                        <img src="/images/circle-dot.svg" alt=""/>
                     </div>
                     <div className={styles.rowText}>
                         <h5>UI Developer</h5>
@@ -64,7 +64,7 @@ export default function About() {
                 </div>
                 <div className={styles.row4}>
                     <div className={styles.rowImage}>
-                        <img src="/images/circle-dot.svg" />
+                        <img src="/images/circle-dot.svg" alt=""/>
                     </div>
                     <div className={styles.rowText}>
                         <h5>UI Developer</h5>
@@ -74,7 +74,7 @@ export default function About() {
                 </div>
                 <div className={styles.row5}>
                     <div className={styles.rowImage}>
-                        <img src="/images/circle-dot.svg" />
+                        <img src="/images/circle-dot.svg" alt=""/>
                     </div>
                     <div className={styles.rowText}>
                         <h5>UI Developer</h5>
@@ -86,7 +86,7 @@ export default function About() {
             {/*Interactive Timeline Section*/}
             <section className={styles.interactiveTimelineContainer}>
                 <h1>Interactive Timeline</h1>
-                <Link href="https://timeline.dylanhedges.com/" target="_blank"><img src={"/images/interactive-timeline.png"} /></Link>
+                <Link href="https://timeline.dylanhedges.com/" target="_blank"><img src={"/images/interactive-timeline.png"} alt="Interactive timeline, select to launch the interactive timeline."/></Link>
             </section>
         </main>
     )

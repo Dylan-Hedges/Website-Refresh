@@ -5,6 +5,6 @@ import styles from './SkillsBanner.module.css';
 //Typing Animation Component
 export default function SkillsBanner(){
     return(
-        <video className={styles.video} src={"/videos/skills-icons-video-cropped.mp4"} autoPlay loop muted />
+        <video className={styles.video} src={"/videos/skills-icons-video-cropped.mp4"} autoPlay loop muted playsInline/>
     )
 }

@@ -6,7 +6,7 @@ export const projectsData = [
       description: "Portfolio website showcasing skills & experience.",
       image: "/images/portfolio-thumb.png",
       tag: ["All", "Web"],
-      projectPageURL: "/Portfolio/PortfolioWebsite",
+      projectPageURL: "/portfolio/portfoliowebsite",
       projectURL: 'https://dylanhedges.com/',
       bullets: [
           'Personal Portfolio website',
@@ -23,7 +23,7 @@ export const projectsData = [
       description: "Quiz web application that uses ChatGPT.",
       image: "/images/dev-quiz-thumb.png",
       tag: ["All", "Web"],
-      projectPageURL: "/Portfolio/DevQuiz",
+      projectPageURL: "/portfolio/devquiz",
       projectURL: 'https://dev-quiz-application-e66b5490dae6.herokuapp.com/',
       bullets: [
           'Interactive Quiz application ',
@@ -40,7 +40,7 @@ export const projectsData = [
       description: "Interactive portfolio game.",
       image: "/images/portfolio-game-thumb.png",
       tag: ["All", "UI"],
-      projectPageURL: "/Portfolio/PortfolioGame",
+      projectPageURL: "/portfolio/portfoliogame",
       projectURL: 'https://portfoliogame.dylanhedges.com/',
       bullets: [
           'Interactive Portfolio game developed using Storyline',
@@ -57,7 +57,7 @@ export const projectsData = [
       description: "Email survey web application.",
       image: "/images/survey-send-thumb.png",
       tag: ["All", "Web"],
-      projectPageURL: "/Portfolio/SurveySend",
+      projectPageURL: "/portfolio/surveysend",
       projectURL: 'https://quiet-coast-41651.herokuapp.com',
       bullets: [
           'Email Survey web application',
@@ -74,7 +74,7 @@ export const projectsData = [
       description: "Custom HTML email templates.",
       image: "/images/custom-emails-thumb.png",
       tag: ["All", "Email"],
-      projectPageURL: "/Portfolio/HTMLEmails",
+      projectPageURL: "/portfolio/htmlemails",
       projectURL: 'https://customhtmlemails.dylanhedges.com/',
       bullets: [
           'Custom HTML email templates',
@@ -91,7 +91,7 @@ export const projectsData = [
       description: "Web Content Accessibility Guidelines demo.",
       image: "/images/wcag-demo-thumb.png",
       tag: ["All", "UI"],
-      projectPageURL: "/Portfolio/WCAGDemo",
+      projectPageURL: "/portfolio/wcagdemo",
       projectURL: 'https://wcagdemo.dylanhedges.com/',
       bullets: [
           'Web Content Accessibility Guidelines demo',
@@ -108,7 +108,7 @@ export const projectsData = [
       description: "Real Estate website.",
       image: "/images/everyday-homes-thumb.png",
       tag: ["All", "Web"],
-      projectPageURL: "/Portfolio/EverydayHomes",
+      projectPageURL: "/portfolio/everydayhomes",
       projectURL: 'https://everydayhomes.dylanhedges.com/',
       bullets: [
           'Real Estate website',
@@ -125,7 +125,7 @@ export const projectsData = [
       description: "YouTube player web application.",
       image: "/images/youtube-player-thumb.png",
       tag: ["All", "Web"],
-      projectPageURL: "/Portfolio/YouTubePlayer",
+      projectPageURL: "/portfolio/youtubeplayer",
       projectURL: 'https://youtubeplayer.dylanhedges.com/',
       bullets: [
           'YouTube video player web application',
@@ -142,7 +142,7 @@ export const projectsData = [
       description: "Restaurant website.",
       image: "/images/joes-bbq-thumb.png",
       tag: ["All", "Web"],
-      projectPageURL: "/Portfolio/JoesBBQ",
+      projectPageURL: "/portfolio/joesbbq",
       projectURL: 'https://joesbbq.dylanhedges.com/',
       bullets: [
           'Restaurant website for a BBQ smokehouse',

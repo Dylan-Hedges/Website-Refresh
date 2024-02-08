@@ -11,7 +11,7 @@ export default function Footer(){
             </div>
             {/*Column 2 - Buttons*/}
             <div className={styles.buttonContainer}>
-            <Link href="/Contact"><button className={styles.btn}>Get in touch!</button></Link>
+            <Link href="/contact"><button className={styles.btn}>Get in touch!</button></Link>
             </div>
             {/*Column 3 - Icons*/}
             <div className={styles.iconContainer}>

@@ -19,7 +19,7 @@ export default function Home() {
                     <div className={styles.textSection}>
                         <p>Web & UI Developer specialising in creating interactive and engaging websites and web applications using HTML, CSS, JavaScript & React.</p>
                         <p>I’m always open to new opportunities. Reach out to me anytime directly via email or LinkedIn.</p>
-                        <Link href="/Contact"><button>Get in touch!</button></Link>
+                        <Link href="/contact"><button>Get in touch!</button></Link>
                     </div>
                     <div className={styles.imageSection}>
                         <img src="/images/home-intro.jpg" alt="Dylan Hedges profile photo."/>

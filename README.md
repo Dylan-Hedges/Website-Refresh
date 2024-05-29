@@ -1,6 +1,9 @@
 # Portfolio Website
 
-Repository for my personal portfolio site [dylanhedges.com](https://dylanhedges.com/). 
+Repository for my personal portfolio site [dylanhedges.com](https://dylanhedges.com/).
+
+TypeScript conversion of my personal portfolio site can be found [here]( https://github.com/Dylan-Hedges/Website-Refresh-TypeScript-Conversion).
+
 
 ## About the Project
 This project represents a thorough overhaul of my personal portfolio website, aimed at showcasing my professional skills, experience, and capabilities. 
